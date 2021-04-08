@@ -12,16 +12,10 @@ module.exports = {
     globals: {
         $: true,
     },
-    settings: {
-        react: {
-            version: '17',
-        },
-    },
     plugins: ['prettier'],
-    extends: ['eslint:recommended', 'plugin:prettier/recommended'],
+    extends: ['eslint:recommended', 'airbnb', 'plugin:prettier/recommended'],
     rules: {
-        'no-alert': 0,
         'no-console': 0,
-        'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+        'prettier/prettier': ['error'],
     },
 };
